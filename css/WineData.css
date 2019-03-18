@@ -46,6 +46,15 @@ svg{
 #h43{
 	padding-top: 40px;
 }
+
+#h44{
+	padding-top: 60px;
+}
+
+#segmentTitle{
+	padding-top: 30px;
+}
+
 .axis path,
 .axis line{        
 	fill: none;
