@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  perspective: 900;
+  overflow-y: scroll;
+  background-color: #B71C1C;
+  color: rgba(48, 69, 92, 0.8);
+}
+
+body {
+  min-height: 0;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin: 90px 0;
+  transform: translate(-50%, 0);
+  box-shadow: 0 10px 0 0 #ff6873 inset;
+  background-color: #fefffa;
+  max-width: 450px;
+  padding: 30px;
+}
+@media (max-width: 550px) {
+  body {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+
+div.top {
+  position: fixed;
+  width: 100%;
+  margin: -90px 30%;
+}
+/* .button {
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  font-size: 16px;
+  padding: 14px 20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+} */
+
+
+svg.icon{
+  width:50px;
+  height:50px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+svg.icon:hover {
+  background-color: #fefffa ; 
+  border-radius: 50%;
+  
+}
+ul {
+  list-style: none;
+  perspective: 900;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.results{
+  min-height: 0;
+  display: inline-block;
+  /* margin-top: 50px 0; */
+  max-width: 255px;
+}
+ul.output{
+  list-style: none;
+  perspective: 900;
+  /* padding: 0;
+  margin: 0; */
+  overflow-y: scroll;
+  font-size: 16px;
+  /* text-align: center; */
+
+}
+ul.output li {
+  /* position: relative; */
+  overflow-y: scroll;
+  padding: 0;
+  margin-top: 10px;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+
+ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+/* p {
+  margin-top: 200px;
+}
+p a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #b83729;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+p a:hover {
+  background-color: #ab3326;
+} */
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  height: 40px;
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  border: none; 
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fefffa;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select-styled:hover {
+  background-color:#e74c3c;
+  opacity: 0.8;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #fefffa;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fefffa transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fefffa;
+}
+.select-options li {
+  font-size:16px;
+  color: rgba(48, 69, 92, 0.8);
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid #fefffa;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: #c0392b;
+  background: #fefffa;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
