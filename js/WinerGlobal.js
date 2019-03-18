@@ -12,7 +12,7 @@
 
 // read in the world.topojson file
   d3.queue()
-        .defer(d3.json, "../json/readme-world-admin1.json")
+        .defer(d3.json, "http://162.246.157.185/802/json/readme-world-admin1.json")
         .await(ready) 
 
 //create a projection
