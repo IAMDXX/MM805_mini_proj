@@ -26,7 +26,7 @@ $(document).ready(() => {
     console.log("start reading json!!!");
 
     // Begin Searching
-    $.getJSON("../json/wine-data.json", function(data){
+    $.getJSON("http://162.246.157.185/802/json/wine-data.json", function(data){
       $.each( data, function( key, val ) {
         if (items.length <=5){
           if ((val.variety != null) && (val.variety == v)){ 
