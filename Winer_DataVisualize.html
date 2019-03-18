@@ -40,6 +40,40 @@
 		-->
 		</div>
 	</nav>
+
+	<!-- <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark navbar fixed-top">
+	  	<a class="navbar-brand" href="file:///Users/luchenliu/Documents/UAlberta_CS_MM/802_MM_Communications/assignments_minipj/assignment3_minipj/webpage/Winer_HomePage.html"> Winer  <i class="fas fa-wine-glass-alt"></i></a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+	
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wine Data</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="file:///Users/luchenliu/Documents/UAlberta_CS_MM/802_MM_Communications/assignments_minipj/assignment3_minipj/webpage/Winer_DataVisualize.html">Overall</a>
+		          <a class="dropdown-item" href="file:///Users/luchenliu/Documents/UAlberta_CS_MM/802_MM_Communications/assignments_minipj/assignment3_minipj/webpage/Winer_GlobalView.html#"> <i class="fas fa-globe-americas"></i> World Map</a>
+		        </div>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Search</a>
+		      </li>
+
+		      <li class="nav-item dropdown" >
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Introduction</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Europ</a>
+		          <a class="dropdown-item" href="#">North America</a>
+		          <a class="dropdown-item" href="#">South America</a>
+		          <a class="dropdown-item" href="#">Asia</a>
+		          <a class="dropdown-item" href="#">Pasific</a>
+		        </div>
+		      </li>
+		    </ul>
+		</div>
+	</nav> -->
 	
 	<div class='container'>
 	<!-- create the jumnotron, for desplaying the title of the chart -->
@@ -54,6 +88,19 @@
 		</div>
 		<div id="Fig3"> 
 		    <h4 id="h43">Which is the most productive country?</h4>
+		</div>
+		<div>
+			<h4 id="h44">Which is the most popular wine type (ranked by numbers)?</h4>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+		    <div class="col-sm-6" id="pieChart"></div>
+		    <div id="pieText" class="col-sm-6 text-container">
+		      <h2 id="segmentTitle">Please select the segment..</h2>
+		      <h5 id="segmentText">The description will appear.</h5>
+		    </div>
 		</div>
 	</div>
 
@@ -330,5 +377,7 @@
 	      d.numbers = +d.numbers;
 	      return d;}
 	</script>
+	<script type="text/javascript" src="js/pieChart.js"></script>
+
 </body>
 </html>
