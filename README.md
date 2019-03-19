@@ -40,4 +40,4 @@ All csv files for data visualization graph are stored in csv folder.
 All image files are stored in img folder.
 
 ## Note
-All reference from codepen.io are listed in $licience
+All reference from codepen.io are listed in $license folder
